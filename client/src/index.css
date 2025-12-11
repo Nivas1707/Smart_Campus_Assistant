@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --glass: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(0, 243, 255, 0.1);
+}
+
+body {
+  @apply bg-holo-space text-holo-ice font-tech overflow-hidden antialiased;
+  background-image:
+    linear-gradient(rgba(5, 10, 20, 0.95), rgba(5, 10, 20, 0.95)),
+    /* Dark overlay */
+    linear-gradient(0deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+    /* Horizontal lines */
+    linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+  /* Vertical lines */
+  background-size: 100% 100%, 60px 60px, 60px 60px;
+  perspective: 2000px;
+  /* Deep perspective for 3D elements */
+}
+
+/* Custom Scrollbar */
+/* Global Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 243, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 243, 255, 0.5);
+}
+
+/* Explicit Utility */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 243, 255, 0.3) rgba(0, 0, 0, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(0, 243, 255, 0.4);
+  border-radius: 4px;
+}
+
+/* Holographic Utilities */
+.holo-panel {
+  @apply bg-glass-surface backdrop-blur-xl border border-holo-border;
+  transform-style: preserve-3d;
+}
+
+.holo-text-glow {
+  text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+/* 3D Transform Utilities */
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+/* Quiz Transitions */
+.slide-out-left {
+  animation: slideOutLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Neon Glows */
+.neon-glow-blue {
+  box-shadow: 0 0 10px #00f3ff, 0 0 20px #00f3ff, inset 0 0 5px rgba(0, 243, 255, 0.5);
+  border-color: #00f3ff;
+}
+
+.neon-glow-green {
+  box-shadow: 0 0 10px #22c55e, 0 0 20px #22c55e;
+  border-color: #22c55e;
+  color: #22c55e;
+}
+
+.neon-glow-red {
+  box-shadow: 0 0 10px #ef4444, 0 0 20px #ef4444;
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+/* Question Entrance */
+.question-enter {
+  animation: questionEnter 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes questionEnter {
+  from {
+    transform: translateY(50px) scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
