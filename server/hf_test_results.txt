@@ -1,0 +1,11 @@
+Testing HF Endpoints...
+
+Testing URL: https://router.huggingface.co/mistralai/Mistral-7B-Instruct-v0.3
+Status: 404
+Error: Request failed with status code 404
+Data: "Not Found"
+
+Testing URL: https://router.huggingface.co/v1/chat/completions
+Status: 400
+Error: Request failed with status code 400
+Data: {"error":"✖ Invalid input: expected string, received undefined\n  → at model"}

@@ -1,0 +1,33 @@
+SUCCESS
+[
+  {
+    "question": "Which of the following planets is considered a dwarf planet?",
+    "options": [
+      "Mercury",
+      "Earth",
+      "Pluto",
+      "Jupiter"
+    ],
+    "correctAnswer": "Pluto"
+  },
+  {
+    "question": "Which planet is the largest in the solar system?",
+    "options": [
+      "Jupiter",
+      "Saturn",
+      "Uranus",
+      "Mars"
+    ],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "question": "Where does the asteroid belt lie in relation to the planets?",
+    "options": [
+      "Between the orbits of Earth and Mars",
+      "Between the orbits of Mars and Jupiter",
+      "Between the orbits of Jupiter and Saturn",
+      "Between the orbits of Saturn and Uranus"
+    ],
+    "correctAnswer": "Between the orbits of Mars and Jupiter"
+  }
+]

@@ -1,0 +1,13 @@
+Testing v1/completions...
+
+Testing Model: mistralai/Mistral-7B-Instruct-v0.3
+Failed: Request failed with status code 404
+Error Data: "Not Found"
+
+Testing Model: mistralai/Mixtral-8x7B-Instruct-v0.1
+Failed: Request failed with status code 404
+Error Data: "Not Found"
+
+Testing Model: mistralai/Mistral-7B-Instruct-v0.2
+Failed: Request failed with status code 404
+Error Data: "Not Found"
