@@ -2,7 +2,7 @@
 
 Smart Campus Assistant is a comprehensive, AI-powered web application designed to help students study more efficiently. Built with the **MERN Stack** (MongoDB, Express, React, Node.js), it acts as a personalized study companion that allows users to upload course materials, generate summaries, take quizzes, and ask questions to an AI tutor grounded in their own content.
 
-https://github.com/Nivas1707/Smart_Campus_Assistant/blob/fd341e3e2c49e21cb0ca6c33a9e244ea23dc43f8/Landing%20Page.png
+![image alt](https://github.com/Nivas1707/Smart_Campus_Assistant/blob/fd341e3e2c49e21cb0ca6c33a9e244ea23dc43f8/Landing%20Page.png)
 
 ## 🚀 Features
 
@@ -130,4 +130,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## 📄 License
 
 This project is licensed under the ISC License.
+
 
